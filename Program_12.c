@@ -1,17 +1,13 @@
-// C Program to calculate Hypotenuse of right angle triangle
-
 #include <stdio.h>
-#include <math.h>
 int main()
 {
-    double A;
-    double B;
-    double C;
-    printf("Enter Side A: ");
-    scanf("%lf", &A);
-    printf("Enter Side B: ");
-    scanf("%lf", &B);
-    C = sqrt(A * A + B * B);
-    printf("\nHypotenuse: %lf", C);
+    char myGrade = 'A';
+    printf("%c", myGrade);
+    char a = 65, b = 66, c = 67;
+    printf("%c", a);
+    printf("%c", b);
+    printf("%c", c);
+    char myText[] = "Hello";
+    printf("%s", myText);
     return 0;
 }
