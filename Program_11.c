@@ -1,17 +1,11 @@
-// C Program to calculate Area and Circumfrence of Circle
-
 #include <stdio.h>
 int main()
 {
-    const double PI = 3.14159;
-    double radius;
-    double circumfrence;
-    double area;
-    printf("Enter the radius of a circle: ");
-    scanf("%lf", &radius);
-    circumfrence = 2 * PI * radius;
-    area = PI * radius * radius;
-    printf("\nCircumfrence: %lf", circumfrence);
-    printf("\nArea: %lf", area);
+    int myNum = 5;
+    float myFloatNum = 5.99;
+    char myLetter = 'D';
+    printf("%d\n", myNum);
+    printf("%f\n", myFloatNum);
+    printf("%c\n", myLetter);
     return 0;
 }
