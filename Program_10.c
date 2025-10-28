@@ -1,28 +1,19 @@
-// Math Function in C
-
 #include <stdio.h>
-#include <math.h>
 int main()
 {
-    double A = sqrt(9);
-    double B = pow(2, 4);
-    int C = round(3.14);
-    int D = ceil(3.14);
-    int E = floor(3.99);
-    double F = fabs(-100);
-    double G = log(3);
-    double H = sin(45);
-    double I = cos(45);
-    double J = tan(45);
-    printf("%lf\n", A);
-    printf("%lf\n", B);
-    printf("%d\n", C);
-    printf("%d\n", D);
-    printf("%d\n", E);
-    printf("%lf\n", F);
-    printf("%lf\n", G);
-    printf("%lf\n", H);
-    printf("%lf\n", I);
-    printf("%lf", J);
+    int studentID = 15;
+    int studentAge = 23;
+    float studentFee = 75.25;
+    char studentGrade = 'B';
+    printf("Student id: %d\n", studentID);
+    printf("Student age: %d\n", studentAge);
+    printf("Student fee: %f\n", studentFee);
+    printf("Student grade: %c", studentGrade);
+    int length = 4;
+    int width = 6;
+    int area;
+    area = length * width;
+    printf("Length is: %d\n", length);printf("Width is: %d\n", width);
+    printf("Area of the rectangle is: %d", area);
     return 0;
 }
