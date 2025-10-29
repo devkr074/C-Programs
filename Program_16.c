@@ -1,36 +1,12 @@
-// Calculator program in C
-
 #include <stdio.h>
 int main()
 {
-    char operator;
-    double num1, num2, result;
-    printf("Enter Operation (+ - * /): ");
-    scanf("%c", &operator);
-    printf("Enter First Number: ");
-    scanf("%lf", &num1);
-    printf("Enter Second Number: ");
-    scanf("%lf", &num2);
-    switch (operator)
-    {
-    case '+':
-        result = num1 + num2;
-        printf("\nResult: %.2lf", result);
-        break;
-    case '-':
-        result = num1 - num2;
-        printf("\nResult: %.2lf", result);
-        break;
-    case '*':
-        result = num1 * num2;
-        printf("\nResult: %.2lf", result);
-        break;
-    case '/':
-        result = num1 / num2;
-        printf("\nResult: %.2lf", result);
-        break;
-    default:
-        printf("\n%c is not a valid Operation", operator);
-    }
+    int items = 50;
+    float cost_per_item = 9.99;
+    float total_cost = items * cost_per_item;
+    char currency = '$';
+    printf("Number of items: %d\n", items);
+    printf("Cost per item: %.2f %c\n", cost_per_item, currency);
+    printf("Total cost = %.2f %c\n", total_cost, currency);
     return 0;
 }
