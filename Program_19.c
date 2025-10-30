@@ -1,17 +1,7 @@
-// NOT operator in C
-
 #include <stdio.h>
-#include <stdbool.h>
 int main()
 {
-    bool sunny = false;
-    if (!sunny)
-    {
-        printf("It's cloudy outside");
-    }
-    else
-    {
-        printf("It's sunny outside");
-    }
+    const int BIRTHYEAR = 1980;
+    printf("Birth Year: %d\n", BIRTHYEAR);
     return 0;
 }
