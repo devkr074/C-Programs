@@ -1,15 +1,37 @@
-// Arguments in C
-
 #include <stdio.h>
-void birthday(char name[], int age)
-{
-    printf("Happy birthday dear %s!", name);
-    printf("\nYou are %d years old", age);
-}
 int main()
 {
-    char name[] = "Bro";
-    int age = 21;
-    birthday(name, age);
+    int x = 10;
+    int y = 3;
+    printf("%d\n", x + y);
+    printf("%d\n", x - y);
+    printf("%d\n", x * y);
+    printf("%d\n", x / y);
+    printf("%d\n", x % y);
+    int z = 5;
+    ++z;
+    printf("%d\n", z);
+    --z;
+    printf("%d\n", z);
+    int a = 10;
+    int b = 3;
+    printf("%d\n", a / b);
+    double c = 10.0;
+    double d = 3.0;
+    printf("%f\n", c / d);
+    ++x;
+    printf("%d\n", x);
+    --x;
+    printf("%d\n", x);
+    ++x;
+    --x;
+    printf("%d\n", x);
+    int peopleInRoom = 0;
+    peopleInRoom++;
+    peopleInRoom++;
+    peopleInRoom++;
+    printf("%d\n", peopleInRoom);
+    peopleInRoom--;
+    printf("%d\n", peopleInRoom);
     return 0;
 }
