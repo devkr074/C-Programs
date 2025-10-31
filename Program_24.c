@@ -1,16 +1,10 @@
-// Function Prototype in C
-
 #include <stdio.h>
-void hello(char[], int);
 int main()
 {
-    char name[] = "Bro";
-    int age = 21;
-    hello(name, age);
+    bool isLoggedIn = true;
+    bool isAdmin = false;
+    printf("Regular user: %s\n", (isLoggedIn && !isAdmin) ? "true" : "false");
+    printf("Has access: %s\n", (isLoggedIn || isAdmin) ? "true" : "false");
+    printf("Not logged in: %s\n", (!isLoggedIn) ? "true" : "false");
     return 0;
-}
-void hello(char name[], int age)
-{
-    printf("Hello, %s", name);
-    printf("\nYou are %d years old", age);
 }
