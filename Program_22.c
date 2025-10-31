@@ -1,13 +1,11 @@
-// Return Statement in C
-
 #include <stdio.h>
-double square(double x)
-{
-    return x * x;
-}
 int main()
 {
-    double x = square(3.14);
-    printf("%lf", x);
+    int x = 10;
+    int x = 10;
+    x += 5;
+    int savings = 100;
+    savings += 50;
+    printf("Total savings: %d\n", savings);
     return 0;
 }
