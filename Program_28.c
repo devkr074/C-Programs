@@ -1,13 +1,13 @@
-// do while Loop in C
-
 #include <stdio.h>
 int main()
 {
-    int i = 1;
-    do
-    {
-        printf("%d\n", i);
-        i++;
-    } while (i <= 10);
+    if (20 > 18) {
+        printf("20 is greater than 18");
+    }
+    int x = 20;
+    int y = 18;
+    if (x > y) {
+        printf("x is greater than y");
+    }
     return 0;
 }
