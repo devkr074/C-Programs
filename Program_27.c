@@ -1,13 +1,15 @@
-// while Loop in C
-
 #include <stdio.h>
 int main()
 {
-    int i = 1;
-    while (i <= 10)
-    {
-        printf("%d\n", i);
-        i++;
+    int myAge = 25;
+    int votingAge = 18;
+    printf("%d", myAge >= votingAge);
+    int myAge = 25;
+    int votingAge = 18;
+    if (myAge >= votingAge) {
+        printf("Old enough to vote!");
+    } else {
+        printf("Not old enough to vote.");
     }
     return 0;
 }
