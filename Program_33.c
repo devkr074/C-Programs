@@ -1,18 +1,30 @@
-// 2D Array in C
-
 #include <stdio.h>
 int main()
 {
-    int arr[][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-    int rows = sizeof(arr) / sizeof(arr[0]);
-    int columns = sizeof(arr[0]) / sizeof(arr[0][0]);
-    for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < columns; j++)
-        {
-            printf("%d ", arr[i][j]);
-        }
-        printf("\n");
+    int a = 200;
+    int b = 33;
+    int c = 500;
+    if (a > b && c > a) {
+        printf("Both conditions are true\n");
+    }
+    a = 200;
+    b = 33;
+    c = 500;
+    if (a > b || a > c) {
+        printf("At least one condition is true\n");
+    }
+    a = 33;
+    b = 200;
+    if (!(a > b)) {
+        printf("a is NOT greater than b\n");
+    }
+    bool isLoggedIn = true;
+    bool isAdmin = false;
+    int securityLevel = 3;
+    if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
+        printf("Access granted\n");
+    } else {
+        printf("Access denied\n");
     }
     return 0;
 }
