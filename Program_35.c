@@ -1,19 +1,29 @@
-// Swap value of two variables in C
-
 #include <stdio.h>
 int main()
 {
-    char x = 'X';
-    char y = 'Y';
-    char temp;
-    printf("Before Swapping\n\n");
-    printf("x: %c\n", x);
-    printf("y: %c\n", y);
-    temp = x;
-    x = y;
-    y = temp;
-    printf("\nAfter Swapping\n\n");
-    printf("x: %c\n", x);
-    printf("y: %c\n", y);
+    int day = 4;
+    switch (day) {
+        case 1:
+        printf("Monday");
+        break;
+        case 2:
+        printf("Tuesday");
+        break;
+        case 3:
+        printf("Wednesday");
+        break;
+        case 4:
+        printf("Thursday");
+        break;
+        case 5:
+        printf("Friday");
+        break;
+        case 6:
+        printf("Saturday");
+        break;
+        case 7:
+        printf("Sunday");
+        break;
+    }
     return 0;
 }
