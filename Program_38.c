@@ -1,23 +1,31 @@
-// typedef in C
-
 #include <stdio.h>
-#include <string.h>
-// typedef: It is a reserved kewords used to give a nickname to existing data type
-typedef struct
-{
-    char name[12];
-    char password[15];
-    int id;
-} user;
 int main()
 {
-    user user1 = {"Bro", "Bro123", 12345};
-    user user2 = {"Bruh", "Bruh456", 1234343};
-    printf("%s\n", user1.name);
-    printf("%s\n", user1.password);
-    printf("%d\n\n", user1.id);
-    printf("%s\n", user2.name);
-    printf("%s\n", user2.password);
-    printf("%d", user2.id);
+    int countdown = 3;
+    while (countdown > 0) {
+        printf("%d\n", countdown);
+        countdown--;
+    }
+    printf("Happy New Year!!\n");
+    int i = 0;
+    while (i <= 10) {
+        printf("%d\n", i);
+        i += 2;
+    }
+    int numbers = 12345;
+    int revNumbers = 0;
+    while (numbers) {
+        revNumbers = revNumbers * 10 + numbers % 10;
+        numbers /= 10;
+    }
+    int dice = 1;
+    while (dice <= 6) {
+        if (dice < 6) {
+            printf("No Yatzy\n");
+        } else {
+            printf("Yatzy!\n");
+        }
+        dice = dice + 1;
+    }
     return 0;
 }
