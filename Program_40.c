@@ -1,27 +1,18 @@
-// enum in C
-
 #include <stdio.h>
-// enum: a user defined type of named integer identifiers helps to make a program more readable
-enum Day
-{
-    Sun = 1,
-    Mon = 2,
-    Tue = 3,
-    Wed = 4,
-    Thu = 5,
-    Fri = 6,
-    Sat = 7
-};
 int main()
 {
-    enum Day today = Sun;
-    if (today == Sun || today == Sat)
-    {
-        printf("It's the weekend! Party Time!");
+    int i, j;
+    for (i = 1; i <= 2; ++i) {
+        printf("Outer: %d\n", i);
+        for (j = 1; j <= 3; ++j) {
+            printf(" Inner: %d\n", j);
+        }
     }
-    else
-    {
-        printf("I have to work today :(");
+    for (i = 1; i <= 3; i++) {
+        for (j = 1; j <= 3; j++) {
+            printf("%d ", i * j);
+        }
+        printf("\n");
     }
     return 0;
 }
