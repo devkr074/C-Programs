@@ -1,23 +1,21 @@
-// Structures in C
-
 #include <stdio.h>
-#include <string.h>
-struct Player
-{
-    char name[12];
-    int score;
-};
 int main()
 {
-    struct Player player1;
-    struct Player player2;
-    strcpy(player1.name, "Bro");
-    player1.score = 4;
-    strcpy(player2.name, "Bra");
-    player2.score = 5;
-    printf("%s\n", player1.name);
-    printf("%d\n\n", player1.score);
-    printf("%s\n", player2.name);
-    printf("%d", player2.score);
+    int i = 0;
+    do {
+        printf("%d\n", i);
+        i++;
+    }
+    while (i < 5);
+    i = 10;
+    do {
+        printf("i is %d\n", i);
+        i++;
+    } while (i < 5);
+    int number;
+    do {
+        printf("Enter a positive number: ");
+        scanf("%d", &number);
+    } while (number > 0);
     return 0;
 }
