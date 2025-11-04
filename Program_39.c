@@ -1,22 +1,20 @@
-// Array of struct in C
-
 #include <stdio.h>
-typedef struct
-{
-    char name[25];
-    float gpa;
-} Students;
 int main()
 {
-    Students student1 = {"Spongebob", 3.0};
-    Students student2 = {"Pattrick", 2.5};
-    Students student3 = {"Sandy", 4.0};
-    Students student4 = {"Squidward", 1.7};
-    Students students[] = {student1, student2, student3, student4};
-    for (int i = 0; i < sizeof(students) / sizeof(students[0]); i++)
-    {
-        printf("%-12s\t", students[i].name);
-        printf("%.2f\n", students[i].gpa);
+    int i;
+    for (i = 0; i < 5; i++) {
+        printf("%d\n", i);
+    }
+    for (i = 0; i <= 10; i = i + 2) {
+        printf("%d\n", i);
+    }
+    int sum = 0;
+    for (i = 1; i <= 5; i++) {
+        sum = sum + i;
+    }
+    printf("Sum is %d", sum);
+    for (i = 5; i > 0; i--) {
+        printf("%d\n", i);
     }
     return 0;
 }
