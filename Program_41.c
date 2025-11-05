@@ -1,16 +1,22 @@
-// Random Numbers in C
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 int main()
 {
-    srand(time(0));
-    int number1 = (rand() % 6) + 1; // Random Number between 1 to 6
-    int number2 = (rand() % 6) + 1;
-    int number3 = (rand() % 6) + 1;
-    printf("%d\n", number1);
-    printf("%d\n", number2);
-    printf("%d", number3);
+    int i;
+    for (i = 0; i <= 100; i += 10) {
+        printf("%d\n", i);
+    }
+    for (i = 0; i <= 10; i = i + 2) {
+        printf("%d\n", i);
+    }
+    for (i = 1; i < 10; i = i + 2) {
+        printf("%d\n", i);
+    }
+    for (i = 2; i <= 512; i *= 2) {
+        printf("%d\n", i);
+    }
+    int number = 2;
+    for (i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", number, i, number * i);
+    }
     return 0;
 }
