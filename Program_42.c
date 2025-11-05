@@ -1,37 +1,56 @@
-// Number Guessing Game in C
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 int main()
 {
-    const int MIN = 1, MAX = 100;
-    int guess;
-    int guesses = 0;
-    int answer;
-    srand(time(0));
-    answer = (rand() % MAX) + MIN;
-    do
-    {
-        printf("Enter a Guess: ");
-        scanf("%d", &guess);
-        if (guess > answer)
-        {
-            printf("Too High!\n");
+    int i;
+    for (i = 0; i < 10; i++) {
+        if (i == 4) {
+            break;
         }
-        else if (guess < answer)
-        {
-            printf("Too Low!\n");
+        printf("%d\n", i);
+    }
+    for (i = 0; i < 10; i++) {
+        if (i == 4) {
+            continue;
         }
-        else
-        {
-            printf("CORRECT!\n");
+        printf("%d\n", i);
+    }
+    for (i = 0; i < 6; i++) {
+        if (i == 2) {
+            continue;
         }
-        guesses++;
-    } while (guess != answer);
-    printf("\n*********************\n");
-    printf("Answer: %d\n", answer);
-    printf("Guesses: %d\n", guesses);
-    printf("*********************");
+        if (i == 4) {
+            break;
+        }
+        printf("%d\n", i);
+    }
+    i = 0;
+    while (i < 10) {
+        if (i == 4) {
+            break;
+        }
+        printf("%d\n", i);
+        i++;
+    }
+    i = 0;
+    while (i < 10) {
+        if (i == 4) {
+            i++;
+            continue;
+        }
+        printf("%d\n", i);
+        i++;
+    }
+    int myNumbers[] = {3, -1, 7, 0, 9};
+    int length = sizeof(myNumbers) / sizeof(myNumbers[0]);
+    int i;
+    for (i = 0; i < length; i++) {
+        if (myNumbers[i] < 0) {
+            continue;
+        }
+        if (myNumbers[i] == 0) {
+            break;
+        }
+        printf("%d\n", myNumbers[i]);
+    }
     return 0;
 }
