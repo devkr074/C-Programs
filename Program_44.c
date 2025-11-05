@@ -1,20 +1,12 @@
-// Bitwise Operator in C
-
 #include <stdio.h>
 int main()
 {
-    int x = 6;  // 6 = 000000110
-    int y = 12; // 12 = 000001100
-    int z = 0;  // 0 = 000000000
-    z = x & y;  // 000000110 & 000001100 = 00000100
-    printf("AND : %d\n", z);
-    z = x | y; // 000000110 | 000001100 = 00001110
-    printf("OR : %d\n", z);
-    z = x ^ y; // 000000110 ^ 000001100 = 00001010
-    printf("XOR : %d\n", z);
-    z = x << 2; // 000000110 << 2 = 000011000
-    printf("LEFT SHIFT : %d\n", z);
-    z = x >> 2; // 000000110 >> 2 = 000000001
-    printf("RIGHT SHIFT : %d\n", z);
+    int myNumbers[] = {10, 25, 50, 75, 100};
+    printf("%zu", sizeof(myNumbers));
+    int length = sizeof(myNumbers) / sizeof(myNumbers[0]);
+    printf("%d", length);
+    double myValues[] = {1.1, 2.2, 3.3};
+    length = sizeof(myValues) / sizeof(myValues[0]);
+    printf("%d", length);
     return 0;
 }
