@@ -1,21 +1,28 @@
-// Reading a File in C
-
 #include <stdio.h>
 int main()
 {
-    FILE *pF = fopen("test.txt", "r");
-    char buffer[255];
-    if (pF == NULL)
-    {
-        printf("Unable to Open File");
+    char greetings[] = "Hello World!";
+    printf("%s", greetings);
+    printf("%c", greetings[0]);
+    greetings[0] = 'J';
+    printf("%s", greetings);
+    char carName[] = "Volvo";
+    int i;
+    for (i = 0; i < 5; ++i) {
+        printf("%c\n", carName[i]);
     }
-    else
-    {
-        while (fgets(buffer, 255, pF) != NULL)
-        {
-            printf("%s", buffer);
-        }
+    int length = sizeof(carName) / sizeof(carName[0]);
+    for (i = 0; i < length; ++i) {
+        printf("%c\n", carName[i]);
     }
-    fclose(pF);
+    greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+    printf("%s", greetings);
+    greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+    char greetings2[] = "Hello World!";
+    printf("%zu\n", sizeof(greetings));
+    printf("%zu\n", sizeof(greetings2));
+    char message[] = "Good to see you,";
+    char fname[] = "John";
+    printf("%s %s!", message, fname);
     return 0;
 }
