@@ -1,15 +1,8 @@
-// Deleting a File in C
-
 #include <stdio.h>
 int main()
 {
-    if (remove("test.txt") == 0)
-    {
-        printf("File Removed Successfully");
-    }
-    else
-    {
-        printf("File not Found");
-    }
+    char txt[] = "We are the so-called \"Vikings\" from the north.";
+    txt[] = "It\'s alright.";
+    txt[] = "The character \\ is called backslash.";
     return 0;
 }
