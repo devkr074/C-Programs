@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 int main() {
-    int8_t a = 100;
+    int8_t a = 10;
     int16_t b = 30000;
     int32_t c = 2000000;
     int64_t d = 9000000000;
